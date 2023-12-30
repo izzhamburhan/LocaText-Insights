@@ -26,7 +26,7 @@ LocaText Insights combines the power of text classification and geographical vis
 
 To run LocaText Insights locally, follow these steps:
 
-1. Clone the repository: `git clone [repository_url]`
+1. Clone the repository: `git clone https://github.com/izzhamburhan/LocaText-Insights.git`
 2. Navigate to the project directory: `cd LocaText-Insights`
 3. Open the `index.html` file in your web browser.
 
@@ -39,7 +39,7 @@ To run LocaText Insights locally, follow these steps:
 
 - Power BI Embed Script
 - OpenAI GPT-3 API
-- [Additional dependencies, if any]
+  
 
 ## Contributing
 
