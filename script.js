@@ -36,6 +36,16 @@ function showChatbot() {
     document.getElementById('userSupportSection').style.display = 'none';
     document.getElementById('userFeedbackSection').style.display = 'none';
     document.getElementById('chatMessages').style.display = 'block';
+    document.getElementById('dataInsightsSection').style.display = 'none';
+}
+
+function showDataInsight() {
+    document.getElementById('dashboardContainer').style.display = 'none';
+    document.getElementById('chatbotSection').style.display = 'none';
+    document.getElementById('userSupportSection').style.display = 'none';
+    document.getElementById('userFeedbackSection').style.display = 'none';
+    document.getElementById('chatMessages').style.display = 'none';
+    document.getElementById('dataInsightsSection').style.display = 'block';
 }
 
 // Add your existing JavaScript code here
@@ -48,6 +58,7 @@ function showDashboard() {
     document.getElementById('userFeedbackSection').style.display = 'none';
     document.getElementById('chatbotSection').style.display = 'none';
     document.getElementById('chatMessages').style.display = 'none';
+    document.getElementById('dataInsightsSection').style.display = 'none';
 }
 
 function showUserSupport() {
@@ -56,6 +67,7 @@ function showUserSupport() {
     document.getElementById('userFeedbackSection').style.display = 'none';
     document.getElementById('chatbotSection').style.display = 'none';
     document.getElementById('chatMessages').style.display = 'none';
+    document.getElementById('dataInsightsSection').style.display = 'none';
 }
 
 function showUserFeedback() {
@@ -64,6 +76,7 @@ function showUserFeedback() {
     document.getElementById('userFeedbackSection').style.display = 'block';
     document.getElementById('chatbotSection').style.display = 'none';
     document.getElementById('chatMessages').style.display = 'none';
+    document.getElementById('dataInsightsSection').style.display = 'none';
 }
 
 // feedback

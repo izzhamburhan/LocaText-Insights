@@ -26,6 +26,7 @@
     <!-- Navigation Bar -->
     <nav>
         <a href="#" onclick="showDashboard()">Dashboard</a>
+        <a href="#" onclick="showDataInsight()">Insight</a>
         <a href="#" onclick="showChatbot()">Chatbot</a>
         <a href="#" onclick="showUserSupport()">User Support</a>
         <a href="#" onclick="showUserFeedback()">User Feedback</a>  
@@ -35,6 +36,56 @@
     <div id="dashboardContainer">
         <iframe title="ESG Indicators" width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiZTM4NmQxZGQtY2JjMC00ZDFlLTkxMGUtMjlhMGE3ZGZkY2NmIiwidCI6ImNkY2JiMGUyLTlmZWEtNGY1NC04NjcwLTY3MjcwNzc5N2FkYSIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
     </div>
+
+        <!-- Data Insights Section -->
+    <div id="dataInsightsSection">
+        <h2>Data Insights</h2>
+        <p>Explore key insights derived from the data presented in the dashboard. Gain a deeper understanding of the trends and patterns.</p>
+
+        <!-- Example Data Insight -->
+            <div class="dataInsightItem">
+                <h3>Geographical Activity Patterns</h3>
+                <p>The geographical map in the Main Dashboard reveals varying activity levels across different regions. Regions with higher intensity are marked in distinct colors, indicating popular interests for each state.</p>
+            </div>
+
+            <!-- Additional Data Insight items -->
+            <div class="dataInsightItem">
+                <h3>Textual Content Analysis</h3>
+                <p>Textual content analysis on the dashboard provides insights into the most frequently used words. The Word Cloud Overall showcases the prevalent themes and topics discussed in user posts.</p>
+            </div>
+
+            <div class="dataInsightItem">
+                <h3>Interest Distribution</h3>
+                <p>The bar chart in the Main Dashboard illustrates the distribution of interests across different locations. Explore how specific interests vary in popularity among users in different regions.</p>
+            </div>
+
+            <!-- Additional Data Insight items -->
+            <div class="dataInsightItem">
+                <h3>Sentiment Analysis</h3>
+                <p>Perform sentiment analysis on the text data to understand the overall sentiment of user posts. Identify trends in positive, negative, or neutral sentiments across different interests and locations.</p>
+            </div>
+
+            <div class="dataInsightItem">
+                <h3>Peak Activity Times</h3>
+                <p>Explore the timeline of user activity to identify peak posting times. Understand when users are most active and engaged, allowing for targeted content delivery or community engagement strategies.</p>
+            </div>
+
+            <div class="dataInsightItem">
+                <h3>Top Trending Interests</h3>
+                <p>Identify the top trending interests among users based on the frequency of posts. This insight provides valuable information for content creators and marketers to tailor their strategies to current trends.</p>
+            </div>
+
+            <div class="dataInsightItem">
+                <h3>Location-Based Engagement</h3>
+                <p>Examine location-based engagement metrics to understand which regions have the highest user engagement. This insight helps in targeting specific geographic areas for promotional or outreach campaigns.</p>
+            </div>
+
+            <div class="dataInsightItem">
+                <h3>User Interaction Trends</h3>
+                <p>Analyze trends in user interactions, such as likes, comments, and shares. Understand which interests generate the most user engagement and tailor strategies to encourage interaction in specific interest categories.</p>
+            </div>
+
+        </div>
 
         <div id="chatbotSection">
             <input type="text" id="userInput" placeholder="Type a message..." onkeypress="handleKeyPress(event)">
