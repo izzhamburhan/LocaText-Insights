@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #f8f8f8;
     margin: 0;
     padding: 0;
@@ -9,8 +9,14 @@ body {
 
 header {
     background-color: #0078d4;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 2em;
+    margin: 0;
 }
 
 nav {
