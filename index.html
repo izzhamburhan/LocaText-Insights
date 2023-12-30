@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power BI Dashboard with Chatbot</title>
+
+    <!-- Power BI Embed Script -->
+    <script src="https://microsoft.github.io/PowerBI-JavaScript/demo/node_modules/powerbi-client/dist/powerbi.js"></script>
+    <script src="https://cdn.openai.com/gpt3/davinci.min.js"></script>
+
+     <!-- Link to external style.css -->
+     <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1 style="color: white;">Text Classification : Interest based on location</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#" onclick="showDashboard()">Dashboard</a>
+        <a href="#" onclick="showChatbot()">Chatbot</a>
+        <a href="#" onclick="showUserSupport()">User Support</a>
+        <a href="#" onclick="showUserFeedback()">User Feedback</a>  
+    </nav>
+
+    <!-- Power BI Embed Container -->
+    <div id="dashboardContainer">
+        <iframe title="ESG Indicators" width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiZTM4NmQxZGQtY2JjMC00ZDFlLTkxMGUtMjlhMGE3ZGZkY2NmIiwidCI6ImNkY2JiMGUyLTlmZWEtNGY1NC04NjcwLTY3MjcwNzc5N2FkYSIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+    </div>
+
+        <div id="chatbotSection">
+            <input type="text" id="userInput" placeholder="Type a message..." onkeypress="handleKeyPress(event)">
+            <button id="sendMessageBtn" onclick="sendMessage()">Send</button>
+        </div>
+    
+        <div id="chatMessages">
+            <!-- Chat messages will be displayed here -->
+        </div>
+   
+    <!-- User Support Section -->
+    <div id="userSupportSection">
+        <h2>User Support</h2>
+        <p>Welcome to our support center. Here, you can find answers to common questions and get assistance.</p>
+
+        <!-- Search Bar -->
+        <input type="text" id="searchBar" placeholder="Search for answers..." oninput="searchFAQs()">
+
+        <!-- FAQs -->
+        <div id="faqs">
+            <!-- FAQ items go here -->
+            <div class="faqItem">
+                <h3 onclick="toggleAnswer(this)" >How can I interpret the Malaysia Map in the Main Dashboard?</h3>
+                <p>The Malaysia Map in the Main Dashboard provides a geographical overview of the dataset. Each marked location on the map represents regions with varying activity levels. The color indicates the interest with the most posts for each state.</p>
+            </div>
+            
+            <div class="faqItem">
+                <h3 onclick="toggleAnswer(this)" >What insights can I gain from the Word Cloud Overall in the Main Dashboard?</h3>
+                <p>The Word Cloud Overall visually summarizes the most frequently occurring words across all interests in the dataset. Larger text indicates higher frequency, offering a quick snapshot of popular words discussed in the posts.</p>
+            </div>
+            
+            <div class="faqItem">
+                <h3 onclick="toggleAnswer(this)" >How does the Heatmap and Bar Chart in the Interest Page work?</h3>
+                <p>The Heatmap and Bar Chart in the Interest Page showcase the intensity of text values across locations for various interests. The Heatmap visually represents text intensity with distinct colors for each interest, while the Bar Chart illustrates interest distribution across different locations.</p>
+            </div>
+            
+            <div class="faqItem">
+                <h3 onclick="toggleAnswer(this)" >What is the purpose of the Navigation Section in the Interest Page?</h3>
+                <p> The Navigation Section consists of buttons corresponding to different interests. Users can click on each button to navigate to a dedicated page providing detailed information for a specific interest, allowing deeper exploration.</p>
+            </div>
+            
+            <div class="faqItem">
+                <h3 onclick="toggleAnswer(this)" >How is the Two Experiment Comparison in the Experiment Result Page useful?</h3>
+                <p>The Two Experiment Comparison in the Experiment Result Page presents a horizontal bar chart comparing the performance of different machine learning classifiers. This chart offers a quick overview of how each classifier excels in specific interest categories, helping users make informed decisions.</p>
+            </div>
+            
+            <!-- Add more FAQs as needed -->
+        </div>
+    </div>
+
+    <!-- User Feedback Section -->
+    <div id="userFeedbackSection">
+        <h2>User Feedback</h2>
+        <p>We value your feedback! Let us know what you think about our website and services.</p>
+
+        <!-- Feedback Form or Box -->
+        <form id="feedbackForm">
+            <!-- Input fields for feedback -->
+            <textarea id="feedbackInput" placeholder="Your feedback..."></textarea>
+            <button type="submit" onclick="submitFeedback()" >Submit Feedback</button>
+        </form>
+    </div>
+
+    <!-- Link to external script.js -->
+    <script src="script.js"></script>
+</body>
+
+</html>
